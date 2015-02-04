@@ -1,8 +1,17 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Ans body:</strong>
+  <strong>Answer:</strong>
   <%= @answer.ans_body %>
+</p>
+
+<p>
+  <strong>Question Title:</strong>
+  <%= @answer.question.title %><br />
+  <strong>Question Tags:</strong>
+  <%= @answer.question.tag %><br />
+  <strong>Question Details:</strong>
+  <%= @answer.question.msg_body %>
 </p>
 
 <%= link_to 'Edit', edit_answer_path(@answer) %> |
