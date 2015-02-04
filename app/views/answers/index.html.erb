@@ -13,6 +13,7 @@
   <tbody>
     <% @answers.each do |answer| %>
       <tr>
+        <td><%= answer.question.try(:title) %></td>
         <td><%= answer.ans_body %></td>
         <td><%= link_to 'Show', answer %></td>
         <td><%= link_to 'Edit', edit_answer_path(answer) %></td>
